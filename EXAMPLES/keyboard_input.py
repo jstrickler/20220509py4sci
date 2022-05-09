@@ -8,3 +8,4 @@ raw_num = input("Enter number: ")  # <1>
 num = float(raw_num)  # <2>
 
 print("2 times {} is {}".format(num, 2 * num))
+
