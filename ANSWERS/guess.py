@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-max_value = 26
+max_value = 1000001
 min_value = 0
 tries = 1
 
@@ -16,10 +16,10 @@ while True:
     elif answer == "l":
         min_value = guess
     elif answer == "y":
-        print("I got it in {} tries!".format(tries + 1))
+        print("I got it in {} tries!".format(tries))
         break
     else:
-        print("Please enter h, l, or y")
+        print("Please enter q, h, l, or y")
 
     if answer in ("h", "l"):
         tries += 1  # tries = tries + 1
