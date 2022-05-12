@@ -5,16 +5,15 @@ def main():
     wb = px.load_workbook('../DATA/presidents.xlsx')
 
 # three ways to get to a worksheet:
-
     # 1
-    print(wb.sheetnames, '\n')
-    ws = wb['US Presidents']
-    print(ws, '\n')
-
-    # 2
     for ws in wb:
         print(ws.title, ws.dimensions)
     print()
+
+    # 2
+    print(wb.sheetnames, '\n')
+    ws = wb['US Presidents']
+    print(ws, '\n')
 
     # 3
     ws = wb.active

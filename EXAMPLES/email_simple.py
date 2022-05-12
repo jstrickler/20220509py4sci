@@ -7,7 +7,7 @@ from datetime import datetime
 TIMESTAMP = datetime.now().ctime()  # <4>
 
 SENDER = 'jstrick@mindspring.com'
-RECIPIENTS = ['jstrickler@gmail.com']
+RECIPIENTS = ['jstrickler@gmail.com', 'crgnc3@gmail.com']
 MESSAGE_SUBJECT = 'Python SMTP example'
 
 MESSAGE_BODY = """
@@ -24,7 +24,7 @@ smtpserver.login(SMTP_USER, SMTP_PASSWORD)  # <7>
 
 msg = EmailMessage()  # <8>
 msg.set_content(MESSAGE_BODY)  # <9>
-msg['Subject'] = MESSAGE_SUBJECT  # <10>
+msg['subject'] = MESSAGE_SUBJECT  # <10>
 msg['from'] = SENDER  # <11>
 msg['to'] = RECIPIENTS  # <12>
 

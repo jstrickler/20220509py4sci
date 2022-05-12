@@ -5,11 +5,13 @@ import openpyxl as px
 
 def main():
     """program entry point"""
-    wb = px.load_workbook('../DATA/presidents.xlsx')
+    workbook_path  = '../DATA/presidents.xlsx'
+    wb = px.load_workbook(workbook_path)
     ws = wb['US Presidents']
 
     add_age_at_inauguration(ws)
 
+    # wb.save(workbook_path)  # save
     wb.save('presidents1.xlsx')  # save as ...
 
 

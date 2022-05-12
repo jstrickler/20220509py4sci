@@ -3,7 +3,7 @@ from timeit import Timer
 
 setup_code = """
 import re
-alice_text = open('../DATA/alice.txt').read()
+alice_text = open('../DATA/words.txt').read()
 alice_bytes = alice_text.encode()
 """
 

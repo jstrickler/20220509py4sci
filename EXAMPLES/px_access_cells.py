@@ -5,7 +5,7 @@ def main():
     wb = px.load_workbook('../DATA/presidents.xlsx')
     ws = wb['US Presidents']
 
-    # access cell by cell name
+    # access cell by cell name (coordinates)
     print(ws['A1'].value)
     print(ws['C2'].value, ws['B2'].value)
     print()
