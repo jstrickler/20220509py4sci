@@ -34,3 +34,10 @@ print()
 print_header("df[['alpha','epsilon','beta']]['b':'e']")
 print(df[['alpha', 'epsilon', 'beta']]['b':'e'])  # <9>
 print()
+
+print("df.shape: {}".format(df.shape))
+
+print("df.values: {}".format(df.values))
+
+print("df.alpha.std(): {}".format(df.alpha.std()))
+

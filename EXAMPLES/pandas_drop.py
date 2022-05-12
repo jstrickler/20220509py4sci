@@ -26,3 +26,11 @@ print(df2, '\n')
 print_header("After dropping rows b, c, and e")
 df3 = df.drop(['b', 'c', 'e'])  # <3>
 print(df3)
+
+print_header("OG DF")
+print(df, '\n')
+
+df.drop(['alpha', 'epsilon'], axis=1, inplace=True)
+
+print_header("Still OG")
+print(df, '\n')

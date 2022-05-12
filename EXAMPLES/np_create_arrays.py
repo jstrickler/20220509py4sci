@@ -17,7 +17,7 @@ print()
 
 # with uninitialized values
 a_empty = np.empty((3, 8))  # <6>
-print(a_empty)
+print("a_empty: {}".format(a_empty))
 
 print(a.dtype)  # <7>
 

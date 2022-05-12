@@ -29,3 +29,13 @@ print(df, '\n')
 
 print_header("df['gamma']")
 print(df['gamma'])  # <5>
+
+print("df.columns: {}".format(df.columns))
+
+new_columns = ['spam', 'ham', 'toast', 'eggs', 'scones']
+
+df.columns = new_columns
+
+print("df: {}".format(df))
+
+

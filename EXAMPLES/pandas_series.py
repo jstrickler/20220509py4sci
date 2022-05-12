@@ -10,6 +10,8 @@ s1 = pd.Series(np.linspace(1, 5, NUM_VALUES), index=index)  # <2>
 s2 = pd.Series(np.linspace(1, 5, NUM_VALUES))  # <3>
 
 print("s1:", s1, "\n")
+print("s1['a']: {}\n".format(s1['a']))
+
 print("s2:", s2, "\n")
 
 print("selecting elements")
@@ -28,6 +30,9 @@ print(s1.cumsum(), s1.cumprod(), "\n")  # <6>
 
 print('a' in s1)  # <7>
 print('m' in s1)  # <7>
+print("4 in s2: {}".format(4 in s2))
+print("99 in s2: {}".format(99 in s2))
+
 print()
 
 s3 = s1 * 10  # <8>
